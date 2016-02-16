@@ -45,11 +45,10 @@ end
 #  user_id    :integer
 #  active     :boolean
 #  frequency  :integer
+#  name       :integer
 #  created_at :datetime
 #  updated_at :datetime
-#  secure_key :string(255)
-#  type       :string(255)
-#  last_sent  :datetime
+#  secure_key :string
 #
 # Indexes
 #

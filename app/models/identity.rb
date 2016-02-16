@@ -14,9 +14,9 @@ end
 # Table name: identities
 #
 #  id               :integer          not null, primary key
-#  provider         :string(255)
-#  uid              :string(255)
-#  oauth_token      :string(255)
+#  provider         :string
+#  uid              :string
+#  oauth_token      :string
 #  oauth_expires_at :datetime
 #  user_id          :integer
 #  created_at       :datetime

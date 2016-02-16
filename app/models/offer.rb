@@ -12,11 +12,11 @@ end
 #
 #  id          :integer          not null, primary key
 #  user_id     :integer
-#  title       :string(255)
+#  title       :string
 #  description :text
 #  created_at  :datetime
 #  updated_at  :datetime
-#  type        :string(255)
+#  type        :string
 #
 # Indexes
 #

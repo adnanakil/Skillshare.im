@@ -1,35 +1,19 @@
 .container.header
-  .row
-    .col-sm-3
-      .logo
-        = link_to "SkillShare.im", root_path
-    .col-sm-6
-      .logos
-        .icons
-          = link_to fa_tag(offer_icon, tooltip: "Offers"), :offers, class: active?(offers_path)
-          = link_to fa_tag(wanted_icon, tooltip: name_for('wanted', plural: true, capitalized: true)), :wanteds, class: active?(wanteds_path)
-          = link_to fa_tag(community_icon, tooltip: "Community"), :users, class: active?(users_path), "data-no-turbolink" => true
+  .col-sm-6
+    %h1 
+      = link_to "Meercat", root_path 
+  .col-sm-6
+    .right
+      - if !signed_in?
+        = link_to "Sign in/up", sign_in_path, class: "btn btn-primary btn-lg sign-in-btn js-sign-in-btn", role: "button"
 
-    .col-sm-3
-      .right
-        .btn-group
-          - if signed_in?
-            %ul.nav.navbar-nav
-              %li
-                %button.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
-                  = fa_tag("plus", tooltip: "New")
-                %ul.dropdown-menu{role: "menu"}
-                  %li= link_to "New offer", new_user_offer_path(current_user)
-                  %li= link_to "New #{name_for('wanted')}", new_user_wanted_path(current_user)
-              %li
-                %button.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
-                  = fa_tag("user", tooltip: "Profile")
-                %ul.pull-right.dropdown-menu{role: "menu"}
-                  %li= current_user.decorate.internal_profile_link
-                  %li= link_to "Sign Out", sign_out_path, id: "sign_out"
+            
 
-          - else
-            = link_to "Sign in or sign up", sign_in_path, class: "btn btn-primary btn-lg sign-in-btn js-sign-in-btn", role: "button"
+    / .col-sm-12
+    /   .right
+    /     .btn-group
+    /       - if !signed_in?
+    /         = link_to "Sign in/up", sign_in_path, class: "btn btn-primary btn-lg sign-in-btn js-sign-in-btn", role: "button"
 
 :javascript
   $(function () { $("[data-toggle='tooltip']").tooltip(); })

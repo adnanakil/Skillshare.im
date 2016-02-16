@@ -1,12 +1,13 @@
-Skillshare.im is a place for
-[effective altruists](http://80000hours.org/what-is-an-effective-altruist)
-to share their skills, stuff, and even couches with one another.
+Meercat is a place for
+young entrepeneurs to connect with people who have more experience and some free time to help out.
 
 Helping other help others—what could be more helpful? Not only will
 you improve the world; you'll connect with others in the community.
 
 Check out the [FAQ](/faq) to learn more.
 
-Skillshare.im was tenderly hand-crafted with loving-kindness by
+Special thanks to: 
 [Ozzie Gooen](http://ozziegooen.com/) and
 [Patrick Brinich-Langlois](http://www.patrickbrinichlanglois.com/).
+
+/- Adnan 

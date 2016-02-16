@@ -12,12 +12,6 @@ group :test, :development do
   gem 'pry-rails'
   gem 'hirb'
   gem 'spring-commands-rspec'
-  gem 'guard-rails'
-  gem 'guard-rspec'
-  gem 'guard-livereload'
-  gem 'guard-bundler'
-  gem 'growl'
-  gem 'libnotify'
 end
 
 group :development do
