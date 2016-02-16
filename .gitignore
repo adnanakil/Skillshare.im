@@ -23,4 +23,4 @@ db/test.sqlite3-journal
 /config/application.yml
 .idea
 .DS_Store
-secrets.yml
+config/secrets.yml
